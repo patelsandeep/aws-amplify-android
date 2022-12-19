@@ -1,0 +1,54 @@
+{
+    "UserAgent": "aws-amplify-cli/0.1.0",
+    "Version": "0.1.0",
+    "IdentityManager": {
+        "Default": {}
+    },
+    "AppSync": {
+        "Default": {
+            "ApiUrl": "https://m3mxh6bkmffxzhr67tsvsyj3ve.appsync-api.ap-southeast-1.amazonaws.com/graphql",
+            "Region": "ap-southeast-1",
+            "AuthMode": "API_KEY",
+            "ApiKey": "da2-fmrdgshifvbl7lkmyjxfvtfaii",
+            "ClientDatabasePrefix": "awsamplifycrud_API_KEY"
+        }
+    },
+    "CredentialsProvider": {
+        "CognitoIdentity": {
+            "Default": {
+                "PoolId": "ap-southeast-1:9fc877da-7f2a-4256-942c-d6581bfe9586",
+                "Region": "ap-southeast-1"
+            }
+        }
+    },
+    "CognitoUserPool": {
+        "Default": {
+            "PoolId": "ap-southeast-1_JQ2W6etMZ",
+            "AppClientId": "19v33mbbj3mum077h2n6gtds5n",
+            "Region": "ap-southeast-1"
+        }
+    },
+    "Auth": {
+        "Default": {
+            "authenticationFlowType": "USER_SRP_AUTH",
+            "socialProviders": [],
+            "usernameAttributes": [
+                "EMAIL"
+            ],
+            "signupAttributes": [
+                "EMAIL"
+            ],
+            "passwordProtectionSettings": {
+                "passwordPolicyMinLength": 8,
+                "passwordPolicyCharacters": []
+            },
+            "mfaConfiguration": "OFF",
+            "mfaTypes": [
+                "SMS"
+            ],
+            "verificationMechanisms": [
+                "EMAIL"
+            ]
+        }
+    }
+}
